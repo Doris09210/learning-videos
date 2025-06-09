@@ -3,27 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learning</title>
+    <title>Doris 的实用工具分享</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; background-color: #f0f2f5; }
-        .container { max-width: 800px; margin: 2em auto; padding: 1em; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { text-align: center; color: #333; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 1em 0; }
-        a { display: block; padding: 1em; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 1.2em; text-align: center; transition: background-color 0.3s; }
-        a:hover { background-color: #0056b3; }
+        /* 引入一个更具现代感的 Google 字体 */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            /* 使用从 PPT 中提取的深邃、有质感的渐变紫背景 */
+            background-color: #1a1a2e; /* 备用纯色背景 */
+            background-image:
+                radial-gradient(ellipse at top, rgba(118, 72, 160, 0.3), transparent 60%),
+                radial-gradient(ellipse at bottom, rgba(45, 87, 219, 0.2), transparent 70%);
+            background-attachment: fixed; /* 固定背景，滚动时不移动 */
+
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            color: #e0e0e0; /* 默认文字颜色改为浅灰色，更柔和 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 2em auto;
+            padding: 2em;
+            /* 卡片背景：使用半透明的黑色，营造磨砂玻璃质感 */
+            background-color: rgba(26, 26, 46, 0.6);
+            backdrop-filter: blur(10px); /* 背景模糊效果，需要浏览器支持 */
+            -webkit-backdrop-filter: blur(10px); /* 兼容 Safari */
+            border-radius: 16px; /* 更大的圆角 */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* 添加一层微妙的边框 */
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* 更深的阴影，增加立体感 */
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff; /* 主标题使用纯白色，更突出 */
+            font-size: 2.5em; /* 增大标题字号 */
+            font-weight: 600;
+            letter-spacing: 2px; /* 增加字间距 */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* 给标题添加一点光晕效果 */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 1.2em 0;
+        }
+
+        a {
+            display: flex; /* 使用 flex 布局，方便图标和文字对齐 */
+            align-items: center;
+            justify-content: center;
+            gap: 0.8em; /* 图标和文字之间的间距 */
+            
+            padding: 0.8em 1em;
+            /* 按钮背景：使用更深的半透明色 */
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #f0f0f0;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: 400;
+            text-align: center;
+            
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            
+            transition: all 0.3s ease; /* 平滑所有变化的过渡效果 */
+        }
+
+        /* 鼠标悬停效果：模仿 PPT 中的荧光绿点缀 */
+        a:hover {
+            transform: translateY(-3px) scale(1.02); /* 向上浮动并轻微放大 */
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border-color: #9dff00; /* 边框变为荧光绿色 */
+            box-shadow: 0 4px 20px rgba(157, 255, 0, 0.2); /* 添加荧光绿色的辉光效果 */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>实用工具分享（by Doris）</h1>
+        <h1>实用工具分享</h1>
         <ul>
-            <li><a href="./RAYYAN.html"> RAYYAN</a></li>
-            <li><a href="./researchflow.html">Researchflow</a></li>
-            <li><a href="./Gamma.html">Gamma</a></li>
-            <li><a href="./jitter.html">Jitter</a></li>
-            <li><a href="./spacetypegenerator.html">Spacetypegenerator</a></li>
-            </ul>
+            <!-- 我为您添加了一些相关的 Emoji 图标，让列表更生动 -->
+            <li><a href="./RAYYAN.html">📑 RAYYAN</a></li>
+            <li><a href="./researchflow.html">🌊 Researchflow</a></li>
+            <li><a href="./Gamma.html">🎨 Gamma</a></li>
+            <li><a href="./jitter.html">🎬 Jitter</a></li>
+            <li><a href="./spacetypegenerator.html">✒️ Spacetypegenerator</a></li>
+        </ul>
     </div>
 </body>
 </html>
